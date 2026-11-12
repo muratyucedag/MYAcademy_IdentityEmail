@@ -1,4 +1,9 @@
+using MYAcademy_IdentityEmail.Context;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<EmailContext>();
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
