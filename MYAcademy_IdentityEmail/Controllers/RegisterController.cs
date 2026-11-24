@@ -56,7 +56,7 @@ namespace MYAcademy_IdentityEmail.Controllers
 
                 SmtpClient smtpClient = new SmtpClient();
                 smtpClient.Connect("smtp.gmail.com", 587, false);
-                smtpClient.Authenticate("projekursapi@gmail.com", "ixbc cdyx cjfq vfvp");
+                smtpClient.Authenticate("projekursapi@gmail.com", "#");
                 smtpClient.Send(mimeMessage);
                 smtpClient.Disconnect(true);
 
